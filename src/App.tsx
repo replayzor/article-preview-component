@@ -14,7 +14,6 @@ function App() {
 
 	const handleCloseOverlay = () => {
 		setIsOverlayVisible(false);
-		console.log("closed");
 	};
 
 	return (
@@ -75,6 +74,7 @@ function App() {
 										<img src={Pinterest} alt="" />
 									</div>
 									<button
+										onClick={handleCloseOverlay}
 										type="button"
 										className="flex md:hidden items-center justify-center w-8 h-8 ml-16 rounded-full md:ml-36 bg-desaturatedDarkBlue"
 									>
